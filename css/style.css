@@ -1,0 +1,13 @@
+header{
+    width: fit-content;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+    width:min-content;
+    float: right;
+
+}
