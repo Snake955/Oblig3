@@ -1,13 +1,35 @@
 header{
     width: fit-content;
+    display: flex;
 }
 
 h1{
-    text-align: center;
-    margin: 0;
-    padding: 1rem;
-    position: relative;
+    margin: 1rem;
     width:min-content;
     float: right;
+    text-align: center;
+    position: relative;
+    padding-top: 3%;
 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+#menupic{
+    padding: 1%;
+    width: auto;
+}
+
+#profilepic{
+    padding: 3%;
+    width: auto;
+}
+
+#cart{
+    padding: 3%;
+    width: auto;
 }
