@@ -75,6 +75,10 @@ main{
     grid-area: main;
 }
 
+main section img{
+    width: 100%;
+}
+
 footer{
     grid-area: footer;
 }
@@ -90,6 +94,24 @@ footer{
 
     #ham, .fa-solid .fa-user{
         display: none;
+    }
+
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .flex-section img{
+        width: 50%;
+    }
+    
+    .flex-section section{
+        width: 50%;
+        text-align: center;
+    }
+
+    .right img{
+        order:1;
     }
 
 }
