@@ -9,6 +9,10 @@ body{
     padding: 1rem;
 }
 
+header, main, footer{
+    padding: 1rem;
+}
+
 header{
     font-size: 1.5rem;
     font-weight: 600;
@@ -39,6 +43,32 @@ header nav div{
 .responsive{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    background-color: beige;
+    top: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.responsive a{
+    color:rgb(34, 155, 0);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.black-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+
 }
 
 main{
@@ -47,4 +77,19 @@ main{
 
 footer{
     grid-area: footer;
+}
+
+@media only screen and (min-width:600px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    #ham, .fa-solid .fa-user{
+        display: none;
+    }
+
 }
