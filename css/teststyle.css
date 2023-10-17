@@ -34,6 +34,12 @@ header nav div{
 
 #logo{
     text-decoration: none;
+    text-align:right
+}
+
+#ham{
+    float:left;
+
 }
 
 .navbar{
