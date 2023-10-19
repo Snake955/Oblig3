@@ -1,61 +1,68 @@
-body{
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
 }
 
-#grid-container{
+
+#grid-container {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     padding: 1rem;
 }
 
-header, main, footer{
-    padding: 1rem;
+header,
+main,
+footer {
+    padding: 0.5rem;
 }
 
-header{
+header {
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: 0.5rem;
     grid-area: header;
 
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-header nav div{
+header nav div {
     display: flex;
     gap: 1rem;
 }
 
-#logo{
+#logo {
     text-decoration: none;
     color: black;
 }
 
-.navbar{
+.navbar {
     display: none;
+    padding-right: 40px;
+    justify-content: center;
+
+
 }
 
-.search-section{
+.search-section {
     margin-top: 1rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: end;
-    border: 100px;
 
 }
 
-.sale-section h1{
+.sale-section h1 {
     font-size: 50px;
 
 }
 
-.responsive{
+
+.responsive {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -68,27 +75,34 @@ header nav div{
     width: 100%;
 }
 
-.responsive a{
-    color:rgb(0, 0, 0);
+.responsive a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: inline-block;
     padding: 1rem;
 }
 
-main{
+main {
     grid-area: main;
 }
 
-main section img{
+main section img {
     width: 100%;
 }
 
-footer{
+#text1 {
+    font-size: 30px;
+    max-width: 650px;
+    max-height: 250px;
+}
+
+
+footer {
     grid-area: footer;
 }
 
-@media only screen and (min-width:600px){
-    .navbar{
+@media only screen and (min-width:600px) {
+    .navbar {
         display: flex;
         flex-direction: row;
         gap: 1rem;
@@ -96,26 +110,32 @@ footer{
         margin: 0;
     }
 
-    #ham, .fa-solid .fa-user{
+    #ham,
+    .fa-solid .fa-user {
         display: none;
     }
 
-    .flex-section{
+    .flex-section {
         display: flex;
         flex-direction: row;
     }
-    
-    .flex-section img{
+
+    .flex-section img {
         width: 50%;
     }
-    
-    .flex-section section{
+
+    .flex-section section {
         width: 50%;
         text-align: center;
     }
 
-    .right img{
-        order:1;
+    .right img {
+        order: 1;
     }
 
+}
+
+
+.price-section {
+    text-align: right;
 }

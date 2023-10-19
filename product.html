@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,79 +10,86 @@
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link href="css/font/css/custom-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/teststylecopy.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>WalkRight</title>
 </head>
+
 <body>
     <div id="grid-container">
-    <header>
-        <nav>
-            <a href="#" id="logo">WalkRight</a>
-            <div>
-               <i id="ham" class="fa-sharp fa-solid fa-bars"></i>
-               <i class="fa-solid fa-user"></i>
-            </div>
-            <ul class="navbar">
-                <li><a href="copy1.html">home</a></li>
-                <li><a href="#">product</a></li>
-                <li><a href="#">about</a></li>
-            </ul>
-        </nav>
-        <section class="search-section">
-            <div>
-                <input style="width: 305px" type="text">
-                <i id="search" class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-            </div>
-        </section>
-        <section class="sale-section">
-            <h1>Nike Air Max 1</h1>
-        </section>
-    </header>
-    <main>
-        <!---seksjon 1--->
-        <section class="flex-section">
-            <img src="https://placehold.co/600x400" alt="Grå">
-            <section>
-                <h2>600 kr</h2>
-                <p>All colors and sizes</p>
+        <header>
+            <nav>
+                <a href="copy1.html" id="logo">WalkRight</a>
+                <ul class="navbar">
+                    <li><a href="copy1.html">home</a></li>
+                    <li><a href="product.html">product</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+                <div>
+                    <i id="ham" class="fa-sharp fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-regular fa-cart-shopping" style="color: #000000;"></i>
+
+                </div>
+            </nav>
+            <section class="search-section">
+                <div>
+                    <input style="width: 305px" type="text">
+                    <i id="search" class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                </div>
             </section>
-        </section>
-        <!---seksjon 3--->
-        <section>
-            <h2>Services</h2>
-            <article>
-                <h3>Return</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3>Contact us</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3></h3>
-                <p></p>
-            </article>
-        </section>
+        </header>
+        <main>
+            <!---seksjon 1--->
+            <section class="sale-section">
+                <h1>Nike Air Max 1</h1>
+                <p>Men<br>All sizes
+                </p>
+            </section>
+            <section class="flex-section">
+                <img src="https://placehold.co/600x400" alt="Grå">
+                <section class="price-section">
+                    <h2>600 kr</h2>
+                    <p>All colors and sizes</p>
+                </section>
+            </section>
+            <!---seksjon 3--->
+            <section>
+                <h2>Services</h2>
+                <article>
+                    <h3>Return</h3>
+                    <p></p>
+                </article>
+                <article>
+                    <h3>Contact us</h3>
+                    <p></p>
+                </article>
+                <article>
+                    <h3></h3>
+                    <p></p>
+                </article>
+            </section>
 
-    </main>
-    <footer>
+        </main>
+        <footer>
 
-    </footer>
-   </div>
-     <script>
+        </footer>
+    </div>
+    <script>
 
-     let x = document.querySelector(".navbar")
+        let x = document.querySelector(".navbar")
 
-        document.getElementById("ham").addEventListener("click", (e) =>{
+        document.getElementById("ham").addEventListener("click", (e) => {
             if (x.className === "navbar") {
                 x.className += " responsive";
             } else {
                 x.className = "navbar"
             }
 
-    })
+        })
 
 
 
-     </script>
- </body>
+    </script>
+</body>
+
 </html>
