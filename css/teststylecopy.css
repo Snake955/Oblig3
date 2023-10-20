@@ -93,6 +93,37 @@ header nav div {
     font-weight: 400;
 }
 
+.black-btn2 {
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.test1 {
+    display: flex;
+    justify-content: right;
+    background-color: #000000;
+}
+
+.test1 p {
+    display: flex;
+    justify-content: right;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.test2 {
+    background-color: #000000;
+    max-width: 550px;
+}
+
 main {
     grid-area: main;
 }
@@ -101,16 +132,33 @@ main section img {
     width: 100%;
 }
 
-.produkt-img {
+#produkt-img {
     display: flex;
     flex-direction: row;
     font-size: 20px;
+    height: max-content;
+    width: 25%;
 }
 
 .produkt-img h2 {
     min-width: 150px;
     padding-left: 2rem;
     max-height: 50px;
+}
+
+.pay1 {
+    height: max-content;
+    width: 200px;
+    background-color: #171717;
+    color: #fff;
+}
+
+.class2 {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    text-align: center;
+    background-color: #171717;
 }
 
 #shoe-pic {
@@ -155,6 +203,18 @@ main section img {
 #color-input {
     background-color: #171717;
 
+}
+
+#code-text {
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+#code-input {
+    border-color: #000000;
+    border-width: 3px;
+    margin-top: 1rem;
 }
 
 
