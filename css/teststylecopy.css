@@ -132,12 +132,17 @@ main section img {
     width: 100%;
 }
 
+.innafor {
+    display: flex;
+}
+
 #produkt-img {
     display: flex;
     flex-direction: row;
     font-size: 20px;
-    height: max-content;
-    width: 25%;
+    height: 200px;
+    width: 50%;
+    max-width: 250px;
 }
 
 .produkt-img h2 {
@@ -146,19 +151,29 @@ main section img {
     max-height: 50px;
 }
 
+
+.class2 {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: #171717;
+    width: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.class2 .pay1 {}
+
 .pay1 {
+    display: flex;
+    flex-direction: column;
     height: max-content;
     width: 200px;
     background-color: #171717;
     color: #fff;
-}
-
-.class2 {
-    display: flex;
-    flex-direction: row;
-    height: max-content;
-    text-align: center;
-    background-color: #171717;
+    justify-content: center;
+    align-items: center;
 }
 
 #shoe-pic {
@@ -183,7 +198,12 @@ main section img {
     padding-right: 1rem;
 }
 
-.text2 {
+.test1 {
+    display: flex;
+    max-width: none;
+}
+
+.test2 {
     align-items: center;
 }
 
