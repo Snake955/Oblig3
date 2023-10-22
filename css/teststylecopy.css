@@ -40,6 +40,11 @@ header nav div {
     color: black;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .navbar {
     display: none;
     padding-right: 40px;
@@ -122,6 +127,7 @@ header nav div {
 .test2 {
     background-color: #000000;
     max-width: 550px;
+
 }
 
 main {
@@ -191,6 +197,7 @@ main section img {
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
+    align-items: center;
 }
 
 
