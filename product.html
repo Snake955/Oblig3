@@ -9,13 +9,14 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link href="css/font/css/custom-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/teststyle.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>WalkRight</title>
 </head>
 
 <body>
     <div id="grid-container">
+        <!--Header delen skrevet under Web time med Ann-Charlott-->
         <header>
             <nav>
                 <a href="index.html" id="logo">WalkRight</a>
@@ -38,20 +39,25 @@
             </section>
         </header>
         <main>
-            <!---seksjon 1--->
+            <!---seksjon 1-->
             <section class="sale-section">
                 <h1>Nike Air Max 1</h1>
                 <p>Men<br>All sizes
                 </p>
             </section>
             <section class="flex-section">
-                <img id="product-pic" src="https://placehold.co/600x400" alt="Grå">
+                <img id="product-pic" src="img/produkt-sko.jpg" alt="Produktet">
+                <!--
+                    Bildet er fra:
+                    https://pixabay.com/photos/nike-sneakers-shoes-sneaker-5041716/
+                -->
                 <section class="product-price">
                     <h2>600 kr</h2>
                     <p>All colors and sizes</p>
                     <section class="size-selector">
                         <label>Select Size:</label>
-                        <input style="width: 30px" type="text">
+                        <select id="size-select" name="size">
+                        </select>
                     </section>
                     <section class="color-selector">
                         <label>Color:</label>
@@ -60,7 +66,7 @@
                     <a href="#" class="black-btn">ADD TO SHOPPING CART</a>
                 </section>
             </section>
-            <!---seksjon 2--->
+            <!---seksjon 2-->
             <section>
                 <h2>Details</h2>
                 <article>
@@ -77,26 +83,23 @@
                         adipiscing bibendum est. Non pulvinar neque laoreet suspendisse interdum consectetur libero.</p>
                 </article>
             </section>
+
+        </main>
+        <!--Footer, services-->
+        <footer>
             <section>
-                <h2>Services!</h2>
+                <h2>Services</h2>
                 <article>
                     <h3>Return</h3>
-                    <p></p>
                 </article>
                 <article>
                     <h3>Contact us</h3>
-                    <p></p>
-                </article>
-                <article>
-                    <h3></h3>
-                    <p></p>
                 </article>
             </section>
-        </main>
-        <footer>
-
         </footer>
     </div>
+
+    <!--Script tatt fra Ann-Charlott sin time i Web-->
     <script>
 
         let x = document.querySelector(".navbar")
@@ -109,6 +112,14 @@
             }
 
         })
+
+        let size = document.getElementById("size-select");
+
+        for (let i = 29; i <= 45; i++) {
+            let option = new Option(i, i);
+            size.appendChild(option);
+        }
+
 
 
 

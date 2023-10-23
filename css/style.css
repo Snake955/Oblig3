@@ -1,42 +1,318 @@
-header{
-    width: fit-content;
+body {
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    padding: 1rem;
+}
+
+header,
+main,
+footer {
+    padding: 0.5rem;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    grid-area: header;
+
+}
+
+header nav {
     display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-h1{
-    margin: 1rem;
-    width:min-content;
-    text-align: center;
-    padding-top: 2.5%;
-
+header nav div {
+    display: flex;
+    gap: 1rem;
 }
 
-a{
+#logo {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
-input{
-    padding-bottom: 0.3rem;
-    height: 25px;
-    margin-left: 1rem;
-    background-color: rgb(183, 183, 183);
-    border: 0;
-    text-align: left;
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
-#search{
-    margin: 0.5rem;
+.navbar {
+    display: none;
+    padding-right: 40px;
+    justify-content: center;
+
+
+}
+
+.search-section {
     margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: end;
+
 }
 
-#mainpic{
-    max-width: 400px;
-    display:inline-flex;
-    padding: 1rem;
-    
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0.5rem;
+    width: 100%;
 }
 
-h2{
+.responsive a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
     padding: 1rem;
+}
+
+
+main {
+    grid-area: main;
+}
+
+main section img {
+    width: 100%;
+}
+
+.sale-section h1 {
+    font-size: 50px;
+
+}
+
+#product-pic {
+    padding-right: 1rem;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+
+}
+
+.size-selector {
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.size-selector label {
+    margin-right: 2px;
+}
+
+#size-select {}
+
+
+.color-selector {
+    padding-bottom: 1rem;
+}
+
+#color-input {
+    background-color: #171717;
+
+}
+
+.black-btn {
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.pay-btn {
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.valgt-product {
+    display: flex;
+    flex-direction: row;
+}
+
+.valgt-box {
+    flex: 1;
+}
+
+.produkt-shoe {
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+
+.price-box {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: #171717;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.price-box section {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 200px;
+    background-color: #171717;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+.empty-space {
+    flex: 1;
+}
+
+.total-price {
+    display: flex;
+    background-color: #000000;
+    max-width: none;
+    width: 300px;
+    justify-content: end;
+}
+
+.total-price p {
+    display: flex;
+    justify-content: right;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.total-price section {
+    background-color: #000000;
+    max-width: 550px;
+    align-items: center;
+
+
+}
+
+.payment-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.code-part {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+#code-text {
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 10px;
+
+}
+
+#code-input {
+    border-color: #000000;
+    border-width: 3px;
+    margin-top: 1rem;
+    margin-bottom: 17px
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+
+/*Kode skrevet fra Ann-Charlott sin time i Web*/
+
+@media only screen and (min-width:600px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    #ham,
+    .fa-solid .fa-user {
+        display: none;
+    }
+
+    .flex-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-section img {
+        width: 50%;
+    }
+
+    .flex-section section {
+        width: 50%;
+        text-align: center;
+    }
+
+    .right img {
+        order: 1;
+        height: min-content
+    }
+
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .valgt-product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .valgt-product section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .total-price {
+        display: flex;
+        width: 490px;
+        width: 100%;
+    }
+
+    .price-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
