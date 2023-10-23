@@ -61,11 +61,6 @@ a {
 
 }
 
-.sale-section h1 {
-    font-size: 50px;
-
-}
-
 
 .responsive {
     display: flex;
@@ -85,6 +80,52 @@ a {
     text-decoration: none;
     display: inline-block;
     padding: 1rem;
+}
+
+
+main {
+    grid-area: main;
+}
+
+main section img {
+    width: 100%;
+}
+
+.sale-section h1 {
+    font-size: 50px;
+
+}
+
+#product-pic {
+    padding-right: 1rem;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+
+}
+
+.size-selector {
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.size-selector label {
+    margin-right: 2px;
+}
+
+
+.color-selector {
+    padding-bottom: 1rem;
+}
+
+#color-input {
+    background-color: #171717;
+
 }
 
 .black-btn {
@@ -111,57 +152,19 @@ a {
     justify-content: center;
 }
 
-.test1 {
-    display: flex;
-    justify-content: right;
-    background-color: #000000;
-    flex-direction: column;
-    flex: 1;
-    justify-content: end;
-    width: 50%;
-
-}
-
-.test1 p {
-    display: flex;
-    justify-content: right;
-    color: #fff;
-    padding: 0.5rem;
-}
-
-.test2 {
-    background-color: #000000;
-    max-width: 550px;
-
-}
-
-main {
-    grid-area: main;
-}
-
-main section img {
-    width: 100%;
-}
-
-.innafor {
-    display: flex;
-}
-
-.produkt-img {
+.valgt-product {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
-    height: 50%;
-    width: 50%;
-    max-width: 250px;
-    flex: 1;
-    padding: 5px;
 }
 
-.produkt-img h2 {
-    min-width: 150px;
-    padding-left: 2rem;
-    max-height: 50px;
+.valgt-box {
+    flex: 1;
+}
+
+.produkt-shoe {
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
 }
 
 
@@ -175,13 +178,8 @@ main section img {
     align-items: center;
 }
 
-.delivery {
-    display: flex;
-    flex-direction: row;
-}
 
-
-.pay1 {
+.price-box section {
     display: flex;
     flex-direction: column;
     height: max-content;
@@ -193,55 +191,50 @@ main section img {
     flex: 3;
 }
 
-#shoe-pic {
-    max-width: max-content;
+.empty-space {
+    flex: 1;
 }
 
-.text1 {
-    font-size: 30px;
-    max-width: 650px;
-    max-height: 250px;
+.total-price {
+    display: flex;
+    background-color: #000000;
+    max-width: none;
+    width: 300px;
+    justify-content: end;
 }
 
-.text2 {
+.total-price p {
+    display: flex;
+    justify-content: right;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.total-price section {
+    background-color: #000000;
+    max-width: 550px;
+    align-items: center;
+
+
+}
+
+.payment-section {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    text-align: center;
+
+}
+
+.code-part {
+    display: flex;
+    justify-content: right;
     align-items: center;
 }
 
-
-#product-pic {
-    padding-right: 1rem;
-}
-
-
-.test2 {
-    align-items: center;
-}
-
-.size-selector {
-    padding-bottom: 0.5rem;
-    text-align: center;
-}
-
-.size-selector label {
-    margin-right: 2px;
-}
-
-.color-selector {
-    padding-bottom: 1rem;
-}
-
-#color-input {
-    background-color: #171717;
-
-}
 
 #code-text {
     font-style: italic;
     font-weight: bold;
+    padding-right: 10px;
 
 }
 
@@ -249,6 +242,7 @@ main section img {
     border-color: #000000;
     border-width: 3px;
     margin-top: 1rem;
+    margin-bottom: 17px
 }
 
 
@@ -293,12 +287,23 @@ footer {
 
 @media only screen and (max-width:600px) {
 
-    .delivery {
+    .valgt-product {
         display: flex;
         flex-direction: column;
     }
 
-    .delivery .test1 {
+    .valgt-product section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .total-price {
+        display: flex;
+        width: 490px;
+        width: 100%;
+    }
+
+    .price-box {
         display: flex;
         flex-direction: column;
     }
